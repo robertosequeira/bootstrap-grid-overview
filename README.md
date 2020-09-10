@@ -1,27 +1,30 @@
-# BootstrapDemo
+# Bootstrap Grid Overview
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
+## Demo
+
+- Site: [Boostrap Grid Overview](https://robertosequeira.github.io/bootstrap-grid-overview)
+- Presentation: [Boostrap Grid.pdf](00.%20Presentation/Bootstrap%20Grid.pdf)
+- Code: [Components](src/app)
+
+## Reference
+
+### Bootstrap
+
+- [Containers](https://getbootstrap.com/docs/4.0/layout/overview/#containers)
+- [Media queries](https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints)
+- [Grid](https://getbootstrap.com/docs/4.5/layout/grid/)
+- [Flexbox](https://getbootstrap.com/docs/4.5/utilities/flex/)
+
+### CSS-Tricks
+
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) **(Must read)**
+
+# Development
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Build for Github Pages
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run `npm run build:gh-pages` to build the project. The build artifacts will be stored in the `docs/` directory.
