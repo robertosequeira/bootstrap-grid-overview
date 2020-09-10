@@ -1,0 +1,6 @@
+@import 'src/scss/_mixins';
+
+.container.highlight, .container-fluid.highlight {
+  @include fixed-height-container;
+  @include background-1;
+}

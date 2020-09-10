@@ -1,0 +1,20 @@
+@import 'src/scss/_mixins';
+
+.container, .container-fluid {
+  .row {
+    margin-bottom: $margin-bottom;
+
+  > .col, > [class^=col-] {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      text-align: center;
+
+      &:nth-child(odd) {
+        @include background-3;
+      }
+      &:nth-child(even) {
+        @include background-6;
+      }
+    }
+  }
+}

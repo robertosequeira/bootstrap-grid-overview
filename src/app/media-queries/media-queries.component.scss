@@ -1,0 +1,39 @@
+@import 'src/scss/_mixins';
+
+.container {
+  .container {
+      @include fixed-height-container;
+      @include background-5;
+  }
+
+  // Extra small devices (portrait phones, less than 576px)
+  // No media query since this is the default in Bootstrap
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    .container {
+      @include background-4;
+    }
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    .container {
+      @include background-3;
+    }
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    .container {
+      @include background-2;
+    }
+  }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    .container {
+      @include background-1;
+    }
+  }
+}

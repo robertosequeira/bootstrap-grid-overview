@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+.navbar {
+  background-color: #eceff1;
+
+  .navbar-nav  .nav-item.active a.nav-link {
+    font-weight: bold;
+  }
+}
+
+div.header {
+  margin-top: 2em;
+  margin-bottom: 3em;
+}

@@ -1,0 +1,41 @@
+@import 'src/scss/_mixins';
+.container {
+  div.height-lg {
+    min-height: #{$container-height*2}px;
+  }
+
+  div.height-xl {
+    min-height: #{$container-height*3}px;
+  }
+
+  .d-flex {
+    @include fixed-height-container;
+    @include background-1;
+    margin-bottom: $margin-bottom;
+
+    > div {
+      font-size: 3em;
+      padding: 0.2em;
+
+      &:nth-child(1) {
+        @include background-2;
+      }
+
+      &:nth-child(2) {
+        @include background-3;
+      }
+
+      &:nth-child(3) {
+        @include background-4;
+      }
+
+      &:nth-child(4) {
+        @include background-5;
+      }
+
+      &:nth-child(5) {
+        @include background-6;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+// $color-1: #003f5c;
+// $color-1: #2f4b7c;
+$color-1: #665191;
+$color-2: #a05195;
+$color-3: #d45087;
+$color-4: #f95d6a;
+$color-5: #ff7c43;
+$color-6: #ffa600;
+
+$container-height: 100;
+$margin-bottom: 3em;
+
+@mixin fixed-height-container {
+  min-height: #{$container-height}px;
+  margin-bottom: 1em;
+}
+
+@mixin colored-background($color ) {
+  background-color: scale-color($color, $alpha: -75%);
+  border: 1px solid scale-color($color, $alpha: -50%);
+}
+
+@mixin background-1 {
+  @include colored-background($color-1);
+}
+
+@mixin background-2 {
+  @include colored-background($color-2);
+}
+
+@mixin background-3 {
+  @include colored-background($color-3);
+}
+
+@mixin background-4 {
+  @include colored-background($color-4);
+}
+
+@mixin background-5 {
+  @include colored-background($color-5);
+}
+
+@mixin background-6 {
+  @include colored-background($color-6);
+}
